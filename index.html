@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phong Thủy Lê Gia</title>
+  <link rel="stylesheet" href="style.css?v=1.1" />
+</head>
+<body>
+  <div class="container">
+    <h1>Tra Cứu Phong Thủy Bất Động Sản</h1>
+
+    <form id="birthForm">
+      <label for="birthday">Ngày sinh (dương lịch):</label>
+      <input type="date" id="birthday" required />
+
+      <label for="hour">Giờ sinh (0–23):</label>
+      <input type="number" id="hour" min="0" max="23" required />
+
+      <label for="gender">Giới tính:</label>
+      <select id="gender" required>
+        <option value="nam">Nam</option>
+        <option value="nu">Nữ</option>
+      </select>
+
+      <button type="submit">Xem phong thủy</button>
+    </form>
+
+    <div id="result" class="result-box"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
